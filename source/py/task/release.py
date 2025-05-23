@@ -20,9 +20,10 @@ weight_map = {
     "ExtraBold": "800",
 }
 
-
+# 生成字体文件名
 def format_fontsource_name(filename: str):
-    match = re.match(r"MapleMono-(.*)\.(.*)$", filename)
+    # 第2版字体
+    match = re.match(r"MapleMono2-(.*)\.(.*)$", filename)
 
     if not match:
         return None
